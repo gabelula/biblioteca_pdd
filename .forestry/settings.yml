@@ -5,13 +5,8 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: content
-  label: Pages
-  create: all
-  match: "*"
-- type: directory
   path: content/post
-  label: Post
+  label: Notas
   create: documents
   match: "*.md"
   exclude: _index.md
@@ -19,7 +14,7 @@ sections:
   - post
 - type: directory
   path: content/about
-  label: About
+  label: Sobre nosotras
   create: all
   match: "**/*"
 upload_dir: static/images
